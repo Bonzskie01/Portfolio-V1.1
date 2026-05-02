@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTC Portfolio | Feedbacks</title>
+    <link rel="shortcut icon" href="rtc logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div id="particles-container"></div>
+
+    <div id="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">RTC PORTFOLIO</div>
+        <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="nav-brand">
+            <div class="nav-logo">
+                <img src="rtc logo.png" alt="RTC Logo">
+            </div>
+            RTC Portfolio
+        </a>
+        <input type="checkbox" id="hamburger-toggle">
+        <label for="hamburger-toggle" class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+                <li class="dropdown-parent">
+                    <a href="skills.html">Skills <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#tools">Tools & Platforms</a></li>
+                    </ul>
+                </li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><button id="themeToggle"><i class="fas fa-moon"></i><span>Dark</span></button></li>
+        </ul>
+    </nav>
+
+    <!-- ── Section 1: Orbital Display ── -->
+    <section id="feedbacks">
+
+        <div class="section-header fade-in">
+            <div class="section-tag"><i class="fas fa-comments"></i> &nbsp;Client Feedbacks</div>
+            <h2>What People Are <span>Saying</span></h2>
+            <p>Real words from real clients — honest reflections on the work we've done together.</p>
+        </div>
+
+        <div class="orbital-wrapper fade-in">
+            <div class="void" id="void">
+                <div class="crop">
+                    <ul id="card-list" style="--count: 6;">
+
+                        <li><div class="feedback-card">
+                            <div class="feedback-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="feedback-quote">"Rufert delivered an incredibly polished website. His attention to UI detail was beyond what I expected!"</p>
+                            <div class="feedback-author">
+                                <div class="author-avatar" style="background:linear-gradient(135deg,#00d9ff,#3498db);">JM</div>
+                                <div class="author-info">
+                                    <span class="author-name">Juan M.</span>
+                                    <span class="author-role">Startup Founder</span>
+                                </div>
+                            </div>
+                        </div></li>
+
+                        <li><div class="feedback-card">
+                            <div class="feedback-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="feedback-quote">"Super reliable VA! Managed my tasks with zero errors while I focused on growing my business."</p>
+                            <div class="feedback-author">
+                                <div class="author-avatar" style="background:linear-gradient(135deg,#6c5ce7,#3498db);">SR</div>
+                                <div class="author-info">
+                                    <span class="author-name">Sarah R.</span>
+                                    <span class="author-role">E-commerce Owner</span>
+                                </div>
+                            </div>
+                        </div></li>
+
+                        <li><div class="feedback-card">
+                            <div class="feedback-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="feedback-quote">"Great cybersecurity audit. He identified vulnerabilities I didn't know existed with clear fixes."</p>
+                            <div class="feedback-author">
+                                <div class="author-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">AK</div>
+                                <div class="author-info">
+                                    <span class="author-name">Alex K.</span>
+                                    <span class="author-role">IT Manager</span>
+                                </div>
+                            </div>
+                        </div></li>
+
+                        <li><div class="feedback-card">
+                            <div class="feedback-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="feedback-quote">"Fast, responsive, and professional. Built my portfolio from scratch and exceeded every expectation."</p>
+                            <div class="feedback-author">
+                                <div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#3498db);">MC</div>
+                                <div class="author-info">
+                                    <span class="author-name">Maria C.</span>
+                                    <span class="author-role">Freelance Designer</span>
+                                </div>
+                            </div>
+                        </div></li>
+
+                        <li><div class="feedback-card">
+                            <div class="feedback-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="feedback-quote">"Handled all my data entry for months. Incredibly organized and always ahead of deadlines."</p>
+                            <div class="feedback-author">
+                                <div class="author-avatar" style="background:linear-gradient(135deg,#ec4899,#6c5ce7);">TL</div>
+                                <div class="author-info">
+                                    <span class="author-name">Tricia L.</span>
+                                    <span class="author-role">Marketing Director</span>
+                                </div>
+                            </div>
+                        </div></li>
+
+                        <li><div class="feedback-card">
+                            <div class="feedback-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <p class="feedback-quote">"Really solid landing page redesign. Communication was smooth throughout the whole project."</p>
+                            <div class="feedback-author">
+                                <div class="author-avatar" style="background:linear-gradient(135deg,#00d9ff,#6c5ce7);">BP</div>
+                                <div class="author-info">
+                                    <span class="author-name">Ben P.</span>
+                                    <span class="author-role">Product Manager</span>
+                                </div>
+                            </div>
+                        </div></li>
+
+                    </ul>
+                    <div class="last-circle"></div>
+                    <div class="second-circle"></div>
+                </div>
+
+                <div class="mask"></div>
+
+                <div class="center-circle">
+                    <div class="center-circle-inner">
+                        <div class="center-icon"><i class="fas fa-quote-left"></i></div>
+                        <span class="center-stat">5.0★</span>
+                        <span class="center-label">Avg. Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ── Section 2: Feedback Wall ── -->
+    <section id="feedback-wall">
+        <div class="fw-container">
+
+            <div class="fw-header fade-in">
+                <div class="section-tag"><i class="fas fa-thumbs-up"></i> &nbsp;Share Your Thoughts</div>
+                <h2 class="fw-title">Feedback Wall 💬</h2>
+                <p class="fw-subtitle">Loved the portfolio? Drop your thoughts below — no login needed!</p>
+                <div class="fw-avg-badge">
+                    <i class="fas fa-star"></i>
+                    <span id="avgText">No reviews yet</span>
+                </div>
+            </div>
+
+            <div class="fw-grid fade-in">
+
+                <!-- ── Form ── -->
+                <div class="fw-form-panel">
+                    <div class="fw-form-title">✍️ Leave Feedback</div>
+
+                    <label class="fw-label">HOW WOULD YOU RATE THIS PORTFOLIO? *</label>
+                    <div class="emoji-rating" id="emojiRating">
+                        <label class="emoji-option">
+                            <input type="radio" name="rating" value="1">
+                            <div class="emoji-btn">😐</div>
+                            <span class="emoji-label-text">Meh</span>
+                        </label>
+                        <label class="emoji-option">
+                            <input type="radio" name="rating" value="2">
+                            <div class="emoji-btn">🙂</div>
+                            <span class="emoji-label-text">Okay</span>
+                        </label>
+                        <label class="emoji-option">
+                            <input type="radio" name="rating" value="3">
+                            <div class="emoji-btn">😊</div>
+                            <span class="emoji-label-text">Good</span>
+                        </label>
+                        <label class="emoji-option">
+                            <input type="radio" name="rating" value="4">
+                            <div class="emoji-btn">🤩</div>
+                            <span class="emoji-label-text">Love it</span>
+                        </label>
+                        <label class="emoji-option">
+                            <input type="radio" name="rating" value="5">
+                            <div class="emoji-btn">🥳</div>
+                            <span class="emoji-label-text">Amazing!</span>
+                        </label>
+                    </div>
+
+                    <input type="text" class="fw-input" id="nameInput" placeholder="Your name (optional) 👤" maxlength="40">
+                    <textarea class="fw-input" id="messageInput" rows="4" placeholder="What did you think? 💬" maxlength="300"></textarea>
+
+                    <button class="fw-submit" id="submitBtn">🚀 Submit Feedback</button>
+                    <div class="fw-success" id="successMsg">🎉 Thanks for your feedback! It means a lot.</div>
+                </div>
+
+                <!-- ── Wall ── -->
+                <div class="fw-wall-panel">
+                    <div class="fw-wall-title">🏆 What People Say</div>
+                    <div class="fw-wall-list" id="wallList">
+                        <div class="fw-empty" id="emptyState">
+                            <i class="fas fa-comment-slash" style="font-size:2rem;display:block;margin-bottom:10px;opacity:0.3;"></i>
+                            No feedbacks yet. Be the first!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+    (function() {
+        const STORAGE_KEY = 'rtc_feedback_wall_v2';
+        const EMOJIS   = ['','😐','🙂','😊','🤩','🥳'];
+        const LABELS   = ['','Meh','Okay','Good','Love it','Amazing!'];
+        const AVATARS  = ['👤','😎','🧑‍💻','🦊','🎯','💡','🔥','⭐','🚀','🎨'];
+
+        function load() {
+            try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
+            catch { return []; }
+        }
+
+        function save(data) {
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch(e) {}
+        }
+
+        function stars(rating) {
+            let h = '';
+            for (let i = 1; i <= 5; i++) {
+                h += i <= rating
+                    ? '<i class="fas fa-star"></i>'
+                    : '<i class="far fa-star empty"></i>';
+            }
+            return h;
+        }
+
+        function fmtDate(ts) {
+            const d = new Date(ts);
+            return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) +
+                   ', ' + d.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+        }
+
+        function makeCard(fb) {
+            const card = document.createElement('div');
+            card.className = 'fw-review-card';
+            card.innerHTML = `
+                <div class="fw-card-avatar">${fb.avatar}</div>
+                <div class="fw-card-body">
+                    <div class="fw-card-top">
+                        <span class="fw-card-name">${escHtml(fb.name)}</span>
+                        <div class="fw-card-stars">${stars(fb.rating)}</div>
+                    </div>
+                    <div class="fw-card-text">${escHtml(fb.message)}</div>
+                    <div class="fw-card-date">${fmtDate(fb.ts)}</div>
+                </div>
+                <div class="fw-card-emoji-badge">${EMOJIS[fb.rating]}</div>
+            `;
+            return card;
+        }
+
+        function escHtml(s) {
+            return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+
+        function updateBadge() {
+            const data = load();
+            const el = document.getElementById('avgText');
+            if (!data.length) { el.textContent = 'No reviews yet'; return; }
+            const avg = data.reduce((s,f) => s + f.rating, 0) / data.length;
+            el.textContent = `${avg.toFixed(1)} average · ${data.length} review${data.length !== 1 ? 's' : ''}`;
+        }
+
+        function renderWall() {
+            const list  = document.getElementById('wallList');
+            const empty = document.getElementById('emptyState');
+            const data  = load();
+
+            list.querySelectorAll('.fw-review-card').forEach(c => c.remove());
+
+            if (!data.length) {
+                empty.style.display = 'block';
+            } else {
+                empty.style.display = 'none';
+                [...data].reverse().forEach(fb => list.appendChild(makeCard(fb)));
+            }
+            updateBadge();
+        }
+
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            const ratingEl = document.querySelector('input[name="rating"]:checked');
+            const nameEl   = document.getElementById('nameInput');
+            const msgEl    = document.getElementById('messageInput');
+            const successEl = document.getElementById('successMsg');
+
+            if (!ratingEl) {
+                const row = document.getElementById('emojiRating');
+                row.style.animation = 'none';
+                row.offsetHeight;
+                row.style.animation = 'shake 0.4s ease';
+                return;
+            }
+
+            const msg = msgEl.value.trim();
+            if (!msg) {
+                msgEl.style.borderColor = 'rgba(239,68,68,0.5)';
+                msgEl.focus();
+                setTimeout(() => msgEl.style.borderColor = '', 1500);
+                return;
+            }
+
+            const fb = {
+                rating: parseInt(ratingEl.value),
+                name:   nameEl.value.trim() || 'Anonymous',
+                message: msg,
+                avatar: AVATARS[Math.floor(Math.random() * AVATARS.length)],
+                ts: Date.now()
+            };
+
+            const data = load();
+            data.push(fb);
+            save(data);
+
+            // Reset form
+            ratingEl.checked = false;
+            nameEl.value = '';
+            msgEl.value  = '';
+
+            // Show success toast
+            successEl.classList.add('show');
+            setTimeout(() => successEl.classList.remove('show'), 3500);
+
+            // Prepend card to wall
+            const list  = document.getElementById('wallList');
+            const empty = document.getElementById('emptyState');
+            empty.style.display = 'none';
+            list.insertBefore(makeCard(fb), list.firstChild);
+            list.scrollTop = 0;
+
+            updateBadge();
+        });
+
+        renderWall();
+    })();
+    </script>
+
+</body>
+</html>

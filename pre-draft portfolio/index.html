@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTC Portfolio | Creative Developer</title>
+    <link rel="shortcut icon" href="rtc logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div id="particles-container"></div>
+
+    <div id="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">RTC PORTFOLIO</div>
+        <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="nav-brand">
+            <div class="nav-logo">
+                <img src="rtc logo.png" alt="RTC Logo">
+            </div>
+            RTC Portfolio
+        </a>
+        <input type="checkbox" id="hamburger-toggle">
+        <label for="hamburger-toggle" class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+                <li class="dropdown-parent">
+                    <a href="skills.html">Skills <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#tools">Tools & Platforms</a></li>
+                    </ul>
+                </li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><button id="themeToggle"><i class="fas fa-moon"></i><span>Dark</span></button></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">👋 Hello, Welcome</p>
+                <h1 class="hero-name">I'm <span>Rufert</span></h1>
+                <div class="hero-typing"><span class="static">I'm into </span><span class="dynamic" id="typing-text"></span></div>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-primary"><i class="fas fa-user"></i>About Me</a>
+                    <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i>Get In Touch</a>
+                </div>
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/rtc1205" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/Bonzskie01" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-bg"></div>
+                    <img src="rtc.jpeg" alt="Rufert" class="hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none; width:100%; height:100%; border-radius:30px; background: var(--gradient-2); position:relative; z-index:2; align-items:center; justify-content:center; font-size:4rem; color:#fff; font-weight:900; border: 3px solid rgba(255,255,255,0.1);">RTC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="section-header fade-in"><p class="section-subtitle">Get To Know More</p><h2 class="section-title">About Me</h2><div class="section-line"></div></div>
+            <div class="about-grid fade-in">
+                <!-- Left: Info Cards -->
+                <div class="about-cards">
+                    <div class="about-info-card">
+                        <div class="about-card-icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="about-card-text">
+                            <h4>Experience</h4>
+                            <p>Full Stack Developer, UI/UX Design & Research (2023–Present)</p>
+                        </div>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="about-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="about-card-text">
+                            <h4>Education</h4>
+                            <p>B.S. Computer Science – Our Lady of Lourdes College Foundation (2023–Present)</p>
+                        </div>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="about-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="about-card-text">
+                            <h4>Location</h4>
+                            <p>Based in Philippines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Bio + Stats -->
+                <div class="about-right">
+                    <p class="about-bio-text">I am a passionate Freelancer, Web Designer, and Virtual Assistant from Camarines Norte, Philippines. Currently pursuing a Bachelor's Degree in Computer Science, I specialize in building clean UI/UX websites using Figma, Wix, and modern web technologies. I'm dedicated to creating digital solutions that are both beautiful and functional.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Certificates Earned</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="about-spotify">
+                        <div class="spotify-left">
+                            <div class="spotify-icon"><i class="fab fa-spotify"></i></div>
+                            <div class="spotify-text">
+                                <h5>What I'm Listening To</h5>
+                                <p>Live Spotify activity</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right spotify-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="services">
+        <div class="container">
+            <div class="section-header fade-in"><p class="section-subtitle">What I Offer</p><h2 class="section-title">Services</h2><div class="section-line"></div></div>
+            <div class="carousel-wrapper fade-in">
+                <div class="carousel-track">
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-globe"></i></div><h3>Website Designing</h3><p>Clean, modern, and responsive website designs using Figma and Wix with smooth user experiences.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-code"></i></div><h3>Programming Tasks</h3><p>Coding, debugging, and academic programming assistance with clean, documented solutions.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-file-alt"></i></div><h3>Academic Tasks</h3><p>Essays, research papers, infographics, and structured reports tailored to your requirements.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-headset"></i></div><h3>Virtual Assistance</h3><p>Admin support, scheduling, email management, and online file organization for your business.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-tools"></i></div><h3>Technical Support</h3><p>On-call computer troubleshooting, software help, and remote technical assistance.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-paint-brush"></i></div><h3>Graphic Design</h3><p>Infographics, social media graphics, presentations, and marketing visuals.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-globe"></i></div><h3>Website Designing</h3><p>Clean, modern, and responsive website designs using Figma and Wix with smooth user experiences.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-code"></i></div><h3>Programming Tasks</h3><p>Coding, debugging, and academic programming assistance with clean, documented solutions.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-file-alt"></i></div><h3>Academic Tasks</h3><p>Essays, research papers, infographics, and structured reports tailored to your requirements.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-headset"></i></div><h3>Virtual Assistance</h3><p>Admin support, scheduling, email management, and online file organization for your business.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-tools"></i></div><h3>Technical Support</h3><p>On-call computer troubleshooting, software help, and remote technical assistance.</p></div>
+                    <div class="service-card"><div class="service-icon"><i class="fas fa-paint-brush"></i></div><h3>Graphic Design</h3><p>Infographics, social media graphics, presentations, and marketing visuals.</p></div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="skills.html#services" class="btn-primary">VIEW ALL</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="tools">
+        <div class="container">
+            <div class="section-header fade-in"><p class="section-subtitle">My Toolkit</p><h2 class="section-title">Tools & Platforms</h2><div class="section-line"></div></div>
+            <div class="carousel-wrapper fade-in">
+                <div class="carousel-track reverse">
+                    <div class="tool-card"><i class="fab fa-figma"></i><h4>Figma</h4></div>
+                    <div class="tool-card"><i class="fas fa-palette"></i><h4>Canva</h4></div>
+                    <div class="tool-card"><i class="fas fa-cloud"></i><h4>Wix</h4></div>
+                    <div class="tool-card"><i class="fab fa-microsoft"></i><h4>Office 365</h4></div>
+                    <div class="tool-card"><i class="fas fa-video"></i><h4>Zoom</h4></div>
+                    <div class="tool-card"><i class="fab fa-google"></i><h4>Workspace</h4></div>
+                    <div class="tool-card"><i class="fas fa-image"></i><h4>Photoshop</h4></div>
+                    <div class="tool-card"><i class="fab fa-microsoft"></i><h4>Teams</h4></div>
+                    <div class="tool-card"><i class="fas fa-code"></i><h4>VS Code</h4></div>
+                    <div class="tool-card"><i class="fab fa-github"></i><h4>GitHub</h4></div>
+                    <div class="tool-card"><i class="fab fa-figma"></i><h4>Figma</h4></div>
+                    <div class="tool-card"><i class="fas fa-palette"></i><h4>Canva</h4></div>
+                    <div class="tool-card"><i class="fas fa-cloud"></i><h4>Wix</h4></div>
+                    <div class="tool-card"><i class="fab fa-microsoft"></i><h4>Office 365</h4></div>
+                    <div class="tool-card"><i class="fas fa-video"></i><h4>Zoom</h4></div>
+                    <div class="tool-card"><i class="fab fa-google"></i><h4>Workspace</h4></div>
+                    <div class="tool-card"><i class="fas fa-image"></i><h4>Photoshop</h4></div>
+                    <div class="tool-card"><i class="fab fa-microsoft"></i><h4>Teams</h4></div>
+                    <div class="tool-card"><i class="fas fa-code"></i><h4>VS Code</h4></div>
+                    <div class="tool-card"><i class="fab fa-github"></i><h4>GitHub</h4></div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="skills.html#tools" class="btn-primary">VIEW ALL</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="container">
+            <div class="section-header fade-in"><p class="section-subtitle">Portfolio</p><h2 class="section-title">Sample Works</h2><div class="section-line"></div></div>
+            <div class="works-grid">
+                <div class="work-card fade-in">
+                    <div class="work-bg">
+                        <img src="assets/Website Design.png" alt="Website Design">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Website Design</h3>
+                        <a href="works.html?filter=web" class="view-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="work-card fade-in">
+                    <div class="work-bg">
+                        <img src="assets/Academic Task.png" alt="Academic Task">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Academic Task</h3>
+                        <a href="works.html?filter=academic" class="view-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="work-card fade-in">
+                    <div class="work-bg">
+                        <img src="assets/Graphic Design.png" alt="Graphic Design">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Graphic Design</h3>
+                        <a href="works.html?filter=graphic" class="view-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="work-card fade-in">
+                    <div class="work-bg">
+                        <img src="assets/Photo Editing.png" alt="Photo Editing">
+                    </div>
+                    <div class="work-overlay">
+                        <h3>Photo Editing</h3>
+                        <a href="works.html?filter=photo" class="view-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="contact">
+        <div class="container">
+            <div class="section-header fade-in"><p class="section-subtitle">Get In Touch</p><h2 class="section-title">Contact Me</h2><div class="section-line"></div></div>
+            <div class="contact-grid fade-in">
+                <div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/639928174520" target="_blank">+63 992 8174 520</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:rufertconcepcion.va@gmail.com">rufertconcepcion.va@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/rtc1205" target="_blank">Rufert T. Concepcion</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Based in Philippines</span>
+                    </div>
+                </div>
+                <form class="contact-form" action="#" method="POST">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>© 2025 <a href="#">RTC Portfolio</a>. All rights reserved. Designed with ❤️</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

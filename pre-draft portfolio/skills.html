@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTC Portfolio | Skills & Tools</title>
+    <link rel="shortcut icon" href="rtc logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div id="particles-container"></div>
+
+    <div id="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">SKILLS & TOOLS</div>
+        <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="nav-brand">
+            <div class="nav-logo">
+                <img src="rtc logo.png" alt="RTC Logo">
+            </div>
+            RTC Portfolio
+        </a>
+        <input type="checkbox" id="hamburger-toggle">
+        <label for="hamburger-toggle" class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+                <li class="dropdown-parent">
+                    <a href="skills.html">Skills <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#tools">Tools & Platforms</a></li>
+                    </ul>
+                </li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><button id="themeToggle"><i class="fas fa-moon"></i><span>Dark</span></button></li>
+        </ul>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="page-hero-deco"></div>
+        <div class="page-hero-inner">
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Skills & Tools</span>
+            </div>
+            <h1 class="page-hero-title">Skills &amp; <span>Tools</span></h1>
+            <p class="page-hero-sub">A full breakdown of the services I offer, the tools I work with daily, and the proficiency levels I've built over time.</p>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- ── Services ── -->
+    <section id="services" class="skills-section skill-card-format" id="services-cards">
+        <div class="skills-section-header" style="max-width:1200px;margin:0 auto 2rem;">
+            <div>
+                <p class="skills-section-label">What I Offer</p>
+                <h2 class="skills-section-title">Services</h2>
+            </div>
+            <span class="skills-count-badge">6 Services</span>
+        </div>
+
+        <div class="skills-card-grid">
+            <article class="skill-format-card fade-in">
+                <div class="skill-card-visual blue"><i class="fas fa-globe"></i></div>
+                <div class="skill-card-body">
+                    <span class="skill-card-badge">WEB DESIGN</span>
+                    <h3>Website Designing</h3>
+                    <p>Clean, modern, and responsive website designs using Figma and Wix with smooth user experiences.</p>
+                    <div class="skill-card-footer">
+                        <div class="skill-card-tags"><span>Figma</span><span>Wix</span><span>UI/UX</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skill-format-card fade-in">
+                <div class="skill-card-visual navy"><i class="fas fa-code"></i></div>
+                <div class="skill-card-body">
+                    <span class="skill-card-badge">DEVELOPMENT</span>
+                    <h3>Programming Tasks</h3>
+                    <p>Coding, debugging, and academic programming assistance with clean, well-documented solutions.</p>
+                    <div class="skill-card-footer">
+                        <div class="skill-card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skill-format-card fade-in">
+                <div class="skill-card-visual teal"><i class="fas fa-file-alt"></i></div>
+                <div class="skill-card-body">
+                    <span class="skill-card-badge">ACADEMIC</span>
+                    <h3>Academic Tasks</h3>
+                    <p>Essays, research papers, infographics, and structured reports tailored to your requirements.</p>
+                    <div class="skill-card-footer">
+                        <div class="skill-card-tags"><span>Writing</span><span>Research</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skill-format-card fade-in">
+                <div class="skill-card-visual green"><i class="fas fa-headset"></i></div>
+                <div class="skill-card-body">
+                    <span class="skill-card-badge">REMOTE WORK</span>
+                    <h3>Virtual Assistance</h3>
+                    <p>Admin support, scheduling, email management, and online file organization for your business.</p>
+                    <div class="skill-card-footer">
+                        <div class="skill-card-tags"><span>Email</span><span>Admin</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skill-format-card fade-in">
+                <div class="skill-card-visual mint"><i class="fas fa-tools"></i></div>
+                <div class="skill-card-body">
+                    <span class="skill-card-badge">IT SUPPORT</span>
+                    <h3>Technical Support</h3>
+                    <p>On-call computer troubleshooting, software help, and remote technical assistance.</p>
+                    <div class="skill-card-footer">
+                        <div class="skill-card-tags"><span>Troubleshoot</span><span>Remote</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skill-format-card fade-in">
+                <div class="skill-card-visual purple"><i class="fas fa-paint-brush"></i></div>
+                <div class="skill-card-body">
+                    <span class="skill-card-badge">GRAPHIC DESIGN</span>
+                    <h3>Graphic Design</h3>
+                    <p>Infographics, social media graphics, presentations, and marketing visuals that stand out.</p>
+                    <div class="skill-card-footer">
+                        <div class="skill-card-tags"><span>Canva</span><span>Photoshop</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── Proficiency ── -->
+    <section class="skills-section skill-card-format" id="proficiency-cards">
+        <div class="skills-section-header" style="max-width:1200px;margin:0 auto 2rem;">
+            <div>
+                <p class="skills-section-label">How Well I Know It</p>
+                <h2 class="skills-section-title">Proficiency</h2>
+            </div>
+            <span class="skills-count-badge">8 Skills</span>
+        </div>
+
+        <div class="tools-category-wrapper">
+            <!-- WEB & FRONTEND -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-code"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Web &amp; Frontend</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual blue"><i class="fas fa-laptop-code"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">WEB SKILL</span>
+                            <h3>HTML / CSS</h3>
+                            <p>Responsive layouts, modern UI styling, clean structure, and polished portfolio pages.</p>
+                            <div class="skill-mini-progress"><span style="width:88%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>HTML</span><span>CSS</span></div>
+                                <strong>88%</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual navy"><i class="fab fa-js"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">SCRIPTING</span>
+                            <h3>JavaScript</h3>
+                            <p>Interactive components, simple animations, DOM events, and frontend functionality.</p>
+                            <div class="skill-mini-progress"><span style="width:75%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>JS</span><span>DOM</span></div>
+                                <strong>75%</strong>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- DESIGN -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-palette"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Design &amp; Graphics</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual purple"><i class="fab fa-figma"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">UI DESIGN</span>
+                            <h3>Figma / UI Design</h3>
+                            <p>Wireframes, mockups, clean interface layouts, and visual design systems.</p>
+                            <div class="skill-mini-progress"><span style="width:80%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>Figma</span><span>UI/UX</span></div>
+                                <strong>80%</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual teal"><i class="fas fa-palette"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">GRAPHIC DESIGN</span>
+                            <h3>Canva / Graphic Design</h3>
+                            <p>Social media layouts, posters, presentations, and creative branding visuals.</p>
+                            <div class="skill-mini-progress"><span style="width:82%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>Canva</span><span>Graphics</span></div>
+                                <strong>82%</strong>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- BACKEND & PROGRAMMING -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-database"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Backend &amp; Programming</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual green"><i class="fas fa-database"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">BACKEND</span>
+                            <h3>PHP / MySQL</h3>
+                            <p>Basic database-driven systems, forms, login workflows, and CRUD functions.</p>
+                            <div class="skill-mini-progress"><span style="width:70%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>PHP</span><span>MySQL</span></div>
+                                <strong>70%</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual darkteal"><i class="fab fa-python"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">PROGRAMMING</span>
+                            <h3>Python</h3>
+                            <p>Basic scripts, automation, problem solving, and beginner-level data handling.</p>
+                            <div class="skill-mini-progress"><span style="width:65%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>Python</span><span>Scripts</span></div>
+                                <strong>65%</strong>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- PRODUCTIVITY & WRITING -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-briefcase"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Productivity &amp; Writing</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual mint"><i class="fab fa-microsoft"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">PRODUCTIVITY</span>
+                            <h3>Microsoft Office 365</h3>
+                            <p>Documents, spreadsheets, presentations, Teams, and organized office workflows.</p>
+                            <div class="skill-mini-progress"><span style="width:78%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>Word</span><span>Excel</span></div>
+                                <strong>78%</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual pink"><i class="fas fa-pen-nib"></i></div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">WRITING</span>
+                            <h3>Technical Writing</h3>
+                            <p>Clear documentation, reports, process guides, and structured academic content.</p>
+                            <div class="skill-mini-progress"><span style="width:72%"></span></div>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags"><span>Docs</span><span>Reports</span></div>
+                                <strong>72%</strong>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── Tools ── -->
+    <section id="tools" class="skills-section skill-card-format" id="tools-cards">
+        <div class="skills-section-header" style="max-width:1200px;margin:0 auto 2rem;">
+            <div>
+                <p class="skills-section-label">My Toolkit</p>
+                <h2 class="skills-section-title">Tools &amp; Platforms</h2>
+            </div>
+            <span class="skills-count-badge">15 Tools</span>
+        </div>
+
+        <div class="tools-category-wrapper">
+            <!-- FRONTEND -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Frontend</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual blue">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">FRONTEND</span>
+                            <h3>HTML</h3>
+                            <p>Semantic structure for clean, accessible, and organized website pages.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Structure</span>
+                                    <span>Web</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual navy">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">FRONTEND</span>
+                            <h3>CSS</h3>
+                            <p>Responsive styling, modern layouts, animations, and visual polish.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Responsive</span>
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual teal">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">FRONTEND</span>
+                            <h3>JavaScript</h3>
+                            <p>Interactive website features, DOM effects, and dynamic behaviors.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Interactive</span>
+                                    <span>Logic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual green">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">FRONTEND</span>
+                            <h3>Wix</h3>
+                            <p>Website building, layout editing, and quick publishing for simple web projects.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Web</span>
+                                    <span>No-code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-server"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Backend</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual navy">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">BACKEND</span>
+                            <h3>PHP</h3>
+                            <p>Server-side scripting for forms, dashboards, and database-driven web systems.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Server</span>
+                                    <span>Web App</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual green">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">BACKEND</span>
+                            <h3>MySQL</h3>
+                            <p>Relational database design, SQL queries, and data management.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>SQL</span>
+                                    <span>Database</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual darkteal">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">BACKEND</span>
+                            <h3>Python</h3>
+                            <p>Basic automation, scripting, and academic programming support.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Script</span>
+                                    <span>Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- GRAPHICS -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-paint-brush"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Graphics &amp; Design</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual purple">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">GRAPHICS</span>
+                            <h3>Figma</h3>
+                            <p>UI mockups, wireframes, interface layouts, and prototypes.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>UI</span>
+                                    <span>Prototype</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual teal">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">GRAPHICS</span>
+                            <h3>Canva</h3>
+                            <p>Fast graphics, presentations, posters, and marketing layouts.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Graphics</span>
+                                    <span>Slides</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual pink">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">GRAPHICS</span>
+                            <h3>Photoshop</h3>
+                            <p>Image editing, visual cleanup, and creative photo adjustments.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Images</span>
+                                    <span>Editing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- PRODUCTIVITY & OTHERS -->
+            <div class="tools-category-block fade-in">
+                <div class="tools-category-header">
+                    <div class="tools-category-icon"><i class="fas fa-toolbox"></i></div>
+                    <div>
+                        <p>Category</p>
+                        <h3>Productivity &amp; Others</h3>
+                    </div>
+                </div>
+                <div class="skills-card-grid categorized-tools-grid">
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual mint">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">PRODUCTIVITY</span>
+                            <h3>Office 365</h3>
+                            <p>Word, Excel, PowerPoint, Teams, and admin workflow tools.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Docs</span>
+                                    <span>Sheets</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual blue">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">PRODUCTIVITY</span>
+                            <h3>Google Workspace</h3>
+                            <p>Docs, Drive, Gmail, Sheets, and shared file organization.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Drive</span>
+                                    <span>Gmail</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual navy">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">COMMUNICATION</span>
+                            <h3>Zoom</h3>
+                            <p>Online meetings, screen sharing, and remote collaboration.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Meetings</span>
+                                    <span>Remote</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual darkteal">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">DEVELOPMENT</span>
+                            <h3>VS Code</h3>
+                            <p>Code editing, extensions, debugging, and development workflow.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Editor</span>
+                                    <span>Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="skill-format-card fade-in">
+                        <div class="skill-card-visual purple">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="skill-card-body">
+                            <span class="skill-card-badge">DEVELOPMENT</span>
+                            <h3>GitHub</h3>
+                            <p>Code storage, version control, and project collaboration.</p>
+                            <div class="skill-card-footer">
+                                <div class="skill-card-tags">
+                                    <span>Git</span>
+                                    <span>Repo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    </section>
+
+    <!-- Footer -->
+    <footer><p>© 2025 <a href="index.html">RTC Portfolio</a>. All rights reserved. Designed with ❤️</p></footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Fade-in animation for the cards
+        const cards = document.querySelectorAll('.fade-in');
+        const cardObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.2 });
+        cards.forEach(card => cardObserver.observe(card));
+    </script>
+</body>
+</html>

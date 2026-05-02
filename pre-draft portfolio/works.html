@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTC Portfolio | Sample Works</title>
+    <link rel="shortcut icon" href="rtc logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+    <div id="particles-container"></div>
+    <div id="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">SAMPLE WORKS</div>
+        <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="nav-brand">
+            <div class="nav-logo">
+                <img src="rtc logo.png" alt="RTC Logo">
+            </div>
+            RTC Portfolio
+        </a>
+        <input type="checkbox" id="hamburger-toggle">
+        <label for="hamburger-toggle" class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+                <li class="dropdown-parent">
+                    <a href="skills.html">Skills <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#tools">Tools & Platforms</a></li>
+                    </ul>
+                </li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><button id="themeToggle"><i class="fas fa-moon"></i><span>Dark</span></button></li>
+        </ul>
+    </nav>
+
+    <div class="page-hero">
+        <div class="page-hero-deco"></div>
+        <div class="page-hero-inner">
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Sample Works</span>
+            </div>
+            <h1 class="page-hero-title">Sample <span>Works</span></h1>
+            <p class="page-hero-sub">A curated collection of projects — from web design and development to graphic design and academic tasks.</p>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <section class="works-page">
+        <div class="works-controls">
+            <div>
+                <p class="works-label">Portfolio</p>
+                <h2 class="works-title">All Projects</h2>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="dev">Development</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+            </div>
+        </div>
+
+        <div class="works-masonry" id="worksGrid">
+            <div class="work-item fade-in" data-cat="web">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#0f3460,#16213e)"><i class="fas fa-laptop-code"></i></div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Web Design</span>
+                    <h3>Portfolio Website – RTC</h3>
+                    <p>Personal portfolio with dark/light theme toggle, custom cursor, particle effects, and animated sections.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">HTML</span><span class="work-tag">CSS</span><span class="work-tag">JS</span></div>
+                        <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item fade-in" data-cat="dev">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e)"><i class="fas fa-shield-alt"></i></div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Development</span>
+                    <h3>B-RES Disaster Response Platform</h3>
+                    <p>Full-stack disaster response and family accountability system with real-time mapping and offline-first architecture.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">Node.js</span><span class="work-tag">PostgreSQL</span><span class="work-tag">React Native</span></div>
+                        <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item fade-in" data-cat="graphic">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#2d1b69,#11998e)"><i class="fas fa-pencil-ruler"></i></div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Graphic Design</span>
+                    <h3>Social Media Graphics Pack</h3>
+                    <p>Branded social media templates, infographics, and marketing visuals created in Canva and Photoshop.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">Canva</span><span class="work-tag">Photoshop</span></div>
+                        <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item fade-in" data-cat="web">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#134e5e,#71b280)"><i class="fas fa-school"></i></div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Web Design</span>
+                    <h3>School Website – SVPS</h3>
+                    <p>Multi-page school website built with HTML/CSS/JS connected to Supabase and deployed on Vercel.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">HTML</span><span class="work-tag">Supabase</span><span class="work-tag">Vercel</span></div>
+                        <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item fade-in" data-cat="dev">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#1f4037,#99f2c8)"><i class="fas fa-trophy"></i></div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Development</span>
+                    <h3>Pageant Tabulation System</h3>
+                    <p>Full-featured tabulation with Admin, Judge, and Results portals, gender separation, and weighted scoring.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">PHP</span><span class="work-tag">PostgreSQL</span><span class="work-tag">Bootstrap</span></div>
+                        <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item fade-in" data-cat="academic">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#373b44,#4286f4)"><i class="fas fa-file-medical"></i></div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Academic</span>
+                    <h3>Nursing Care Plans &amp; Checklists</h3>
+                    <p>Formatted academic nursing documents including care plans, performance checklists, and teaching plans.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">Word</span><span class="work-tag">Academic Writing</span></div>
+                        <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item fade-in" data-cat="dev">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#0f2027,#2c5364)">
+                    <img src="assets/ollcfportal/1.png" alt="OLLCF Smart Portal">
+                </div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Development</span>
+                    <h3>OLLCF Smart Portal</h3>
+                    <p>Multi-role school management system with super_admin, dean, teacher, and student dashboards.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">PHP</span><span class="work-tag">Bootstrap</span><span class="work-tag">XAMPP</span></div>
+                        <a href="#" class="work-view-btn">
+                            <i class="fas fa-external-link-alt"></i> 
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item fade-in" data-cat="graphic">
+                <div class="work-thumb" style="background:linear-gradient(135deg,#fc5c7d,#6a3093)"><i class="fas fa-camera"></i></div>
+                <div class="work-info">
+                    <span class="work-cat-badge">Graphic Design</span>
+                    <h3>Photo Editing Portfolio</h3>
+                    <p>Collection of photo retouching, background removal, color grading, and creative compositing work.</p>
+                    <div class="work-footer">
+                        <div class="work-tags"><span class="work-tag">Photoshop</span><span class="work-tag">Lightroom</span></div>
+                        <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="works-empty" id="worksEmpty">
+            <i class="fas fa-folder-open"></i>
+            <p>No projects found in this category.</p>
+        </div>
+
+        <div class="works-cta fade-in">
+            <div>
+                <h3>Have a project in mind?</h3>
+                <p>Let's collaborate and build something great together.</p>
+            </div>
+            <a href="index.html#contact" class="works-cta-btn"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+        </div>
+    </section>
+
+    <footer><p>© 2025 <a href="index.html">RTC Portfolio</a>. All rights reserved. Designed with ❤️</p></footer>
+
+    <script src="script.js"></script>
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const workItems  = document.querySelectorAll('.work-item');
+        const emptyState = document.getElementById('worksEmpty');
+
+        function applyFilter(filter) {
+            let visible = 0;
+
+            filterBtns.forEach(b => {
+                b.classList.toggle('active', b.dataset.filter === filter);
+            });
+
+            workItems.forEach(item => {
+                const match = filter === 'all' || item.dataset.cat === filter;
+                item.classList.toggle('hidden', !match);
+                if (match) visible++;
+            });
+
+            emptyState.classList.toggle('show', visible === 0);
+        }
+
+        // CLICK FILTER
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                applyFilter(btn.dataset.filter);
+            });
+        });
+
+        const params = new URLSearchParams(window.location.search);
+        const filterFromURL = params.get("filter");
+
+        if (filterFromURL) {
+            applyFilter(filterFromURL);
+
+            setTimeout(() => {
+                document.querySelector('.works-page').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 300);
+        }
+    </script>
+</body>
+</html>
